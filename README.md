@@ -68,6 +68,15 @@ Vous pouvez voir dans les images ci-dessous que toutes sortes d'informations app
 
 ![Servers](images/servers.png)
 
+----
+
+![Scan jzaehrin.xyz](images/rendu/Graph_domain.png)
+
+On y trouve un grand nombre d'information concernant mon hébergeur ainsi que les informations en provenance du DNS et les informations de contact & gestion.
+Je suis content de savoir que OVH s'occupe d'être visible et que se sont pas mes informations de contact qui sont visible.
+
+----
+
 On peut utiliser ces connexions pour en faire des nouvelles encore plus détaillées. Par exemple, des noms associés avec des emails et même des numéros de téléphone (les numéros de téléphone sont difficiles à obtenir en Europe. La recherche pour les USA fonctionne correctement).
 
 ![People](images/people.png)
@@ -75,6 +84,13 @@ On peut utiliser ces connexions pour en faire des nouvelles encore plus détaill
 Regardons de plus près une personne qui apparaît comme étant connectée au domaine heig-vd.ch. Il s'agit de "Bastian Gardel". Je fais clique-droit sur l'icône de Bastien et **run All Transforms**. De votre côté, sélectionnez une identité trouvée pour votre domaine et exécutez vos transformations. N'oubliez pas de faire une capture et commenter. 
 
 ![Transforms Gardel](images/transform_gardel.png)
+
+----
+
+N'arrivant pas a ajouter le support de l'authentification de Twitter.
+Mes transformations sont un peu plus limité mais malheureusement je ne trouve aucune correspondance avec l'identité de OVH ou celle de mon client durant AST.
+
+----
 
 Lorsque les transformations seront terminées, nous aurons un graphique supplémentaire de quelques adresses email associées à Bastien Gardel. On y trouve aussi une clé PGP qui lui appartient, peut-être. J'ai vérifié avec Bastien et les adresses sont en effet des adresses email qu'il utilise ou il a utilisées. Dans certains cas, les résultats peuvent être assez étranges.
 
@@ -102,6 +118,15 @@ Dans mon cas, je trouve mon adresse email de la HEIG-VD et l'une de mes adresses
 
 Faites quelques recherches, avec des noms que vous connaissez (vous-même y-compris). Est-ce que vous arrivez à trouver des adresses email associées ? N'oubliez pas vos captures et commentaires.
 
+----
+
+![Contact](images/rendu/contact.png)
+
+On peut avoir que l'efficacité est limité selon les personnes. On peut voir que Pierre Kohler a deux adresses qui ont été trouvé par leur identité GPG.
+
+----
+
+
 ## Recherche d'une adresse email
 
 Si vous n'avez pas le nom d'une personne, mais une adresse email, vous pouvez aussi commencer votre recherche directement par l'adresse en question. Dans ce cas là, le résultat de la recherche pourrait vous trouver l'identité associée à cette adresse ainsi que d'autres détails comme, par exemple, une organisation, un numéro de téléphone, etc.
@@ -111,6 +136,15 @@ Pour chercher une adresse email, il suffit d'utiliser l'entité **Email Address*
 ![Email search](images/email_search.png)
 
 Réalisez des recherches avec quelques adresses que vous connaissez, de préférence liées à une organisation. Est-ce que ça vous permet de retrouver des liens intéressants avec l'organisation ? Qu'avez-vous retrouvé en plus ? Accompagnez vos réponses avec des captures d'écran et commentaires.
+
+----
+
+![Email search](images/rendu/email.png)
+
+On voit avec les emails de meilleurs données pour être trouvéen sans grande peine.
+Mais les informations peuvent être un peu simple selon les hebergeurs mail.
+
+----
 
 
 ## Installation et utilisation de nouvelles transformations
