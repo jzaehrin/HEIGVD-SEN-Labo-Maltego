@@ -70,6 +70,8 @@ Vous pouvez voir dans les images ci-dessous que toutes sortes d'informations app
 
 ----
 
+# REP : Graph de domaine
+
 ![Scan jzaehrin.xyz](images/rendu/Graph_domain.png)
 
 On y trouve un grand nombre d'information concernant mon hébergeur ainsi que les informations en provenance du DNS et les informations de contact & gestion.
@@ -86,6 +88,9 @@ Regardons de plus près une personne qui apparaît comme étant connectée au do
 ![Transforms Gardel](images/transform_gardel.png)
 
 ----
+
+# REP : Twitter
+
 
 N'arrivant pas a ajouter le support de l'authentification de Twitter.
 Mes transformations sont un peu plus limité mais malheureusement je ne trouve aucune correspondance avec l'identité de OVH ou celle de mon ancien employeur.
@@ -120,6 +125,8 @@ Faites quelques recherches, avec des noms que vous connaissez (vous-même y-comp
 
 ----
 
+# REP : Contact
+
 ![Contact](images/rendu/contact.png)
 
 On peut avoir que l'efficacité est limité selon les personnes. On peut voir que Pierre Kohler a deux adresses qui ont été trouvé par leur identité GPG.
@@ -139,6 +146,8 @@ Réalisez des recherches avec quelques adresses que vous connaissez, de préfér
 
 ----
 
+# REP : Email
+
 ![Email search](images/rendu/email.png)
 
 On voit avec les emails qu'on recupère pas forcément des informations ou simplement des données "essayés", Mais les informations peuvent être un peu simple selon les hebergeurs mail voir inexistante.
@@ -154,6 +163,8 @@ Commençons par VirusTotal Public API. VirusTotal peut analyser des fichiers et 
 
 ----
 
+# REP : VirusTotal
+
 ![VirusTotal](images/rendu/virus.png)
 
 J'ai eu des grosses surprises avec ces tranformations, Je suis arrivé à trouver la signature d'un keylogger sur une machine d'un domaine. Cela rends Maltego un outil de collect de donnée utilisable aussi pour un pentest par exemple et permet de faire l'automatisation de recherche de vulnérabilités cependant il semble impossible de savoir où l'information a été trouvé ni comment ce qui fait perdre un peu de son interêt.
@@ -165,6 +176,8 @@ On va maintenant installer la Shodan Tranform. Shodan.io est un "analyseur d'Int
 
 ----
 
+# REP : Shodan
+
 ![Shodan](images/rendu/shodan.png)
 
 Shodan a permis d'extraire des informations concernant une IP, ces informations sont les ports et des informations tiers que je n'ai pas pu comprendre. Il est intéressant pour récupérer les informations de machine découvert derrière des IP trouvés.
@@ -175,6 +188,8 @@ PassiveTotal est une plateforme de recherche de menaces. Le but est de contribue
 
 
 ----
+
+# REP : PassiveTotal
 
 ![PassiveTotal](images/rendu/passive.png)
 
@@ -199,6 +214,8 @@ Tous les résultats sur le graph sont utilisables pour lancer des nouvelles rech
 Utilisez quelques résultats retrouvés lors de vos recherches précédentes pour lancer des transformations sur d'autres entités de types différents à celles que vous avez déjà testé (Person, Domain, email). Est-ce que vous arrivez à trouver quelque chose d'intéressant ? Est-ce que le graph devient difficile à gérer ? Documentez vos activités avec des captures et des commentaires.
 
 ----
+
+# REP : Outil supplémentaire + Commentaire globale
 
 L'outil `Have I Been Pwned?` est intéressant car il permet de rapidement savoir si un adresse email est vulnérale par le biais d'un compte et donc potentiellement pouvoir utiliser ces fuites de données.
 
