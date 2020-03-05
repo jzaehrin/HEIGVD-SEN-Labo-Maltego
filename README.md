@@ -88,7 +88,7 @@ Regardons de plus près une personne qui apparaît comme étant connectée au do
 ----
 
 N'arrivant pas a ajouter le support de l'authentification de Twitter.
-Mes transformations sont un peu plus limité mais malheureusement je ne trouve aucune correspondance avec l'identité de OVH ou celle de mon client durant AST.
+Mes transformations sont un peu plus limité mais malheureusement je ne trouve aucune correspondance avec l'identité de OVH ou celle de mon ancien employeur.
 
 ----
 
@@ -141,8 +141,7 @@ Réalisez des recherches avec quelques adresses que vous connaissez, de préfér
 
 ![Email search](images/rendu/email.png)
 
-On voit avec les emails de meilleurs données pour être trouvéen sans grande peine.
-Mais les informations peuvent être un peu simple selon les hebergeurs mail.
+On voit avec les emails qu'on recupère pas forcément des informations ou simplement des données "essayés", Mais les informations peuvent être un peu simple selon les hebergeurs mail voir inexistante.
 
 ----
 
@@ -153,9 +152,34 @@ Pour installer de nouvelles transforms, cliquez sur l'onglet "Transforms" et ens
 
 Commençons par VirusTotal Public API. VirusTotal peut analyser des fichiers et des URLs pour chercher des malwares. Cela permet, par exemple, de trouver des fichiers/URLs compromis chez une cible. Vous aurez besoin de [créer un compte]( https://www.virustotal.com/gui/join-us) pour avoir accès à une clé vous permettant d'utiliser l'API et donc, la transformation correspondante pour Maltego. Un lien pour trouver votre clé vous sera envoyé dans le même email utilisé pour l'activation du compte.
 
+----
+
+![VirusTotal](images/rendu/virus.png)
+
+J'ai eu des grosses surprises avec ces tranformations, Je suis arrivé à trouver la signature d'un keylogger sur une machine d'un domaine. Cela rends Maltego un outil de collect de donnée utilisable aussi pour un pentest par exemple et permet de faire l'automatisation de recherche de vulnérabilités cependant il semble impossible de savoir où l'information a été trouvé ni comment ce qui fait perdre un peu de son interêt.
+
+----
+
 On va maintenant installer la Shodan Tranform. Shodan.io est un "analyseur d'Internet". Il donne des informations intéressantes (aussi de point de vue de la sécurité) sur des dispositifs connectés, des serveurs et services, etc. Pour comprendre ce que Shodan vous apporte à travers le Transform Maltego et comment ça marche, [vous pouvez lire cet article](http://maltego.blogspot.com/2016/04/abracadabra-its-shodan-time.html). Vous aurez besoin de [créer un compte](https://account.shodan.io/register) pour utiliser la transformation.
 
+
+----
+
+![VirusTotal](images/rendu/virus.png)
+
+J'ai eu des grosses surprises avec ces tranformations, Je suis arrivé à trouver la signature d'un keylogger sur une machine d'un domaine. Cela rends Maltego un outil de collect de donnée utilisable aussi pour un pentest par exemple et permet de faire l'automatisation de recherche de vulnérabilités cependant il semble impossible de savoir où l'information a été trouvé ni comment ce qui fait perdre un peu de son interêt.
+
+----
+
 PassiveTotal est une plateforme de recherche de menaces. Le but est de contribuer à analyser la sécurité de systèmes pour prévenir les attaques avant qu'elles n 'arrivent. Pour activer cette transformation, il faut commencer par la [création d'un compte](https://community.riskiq.com/registration). Vous accédez ensuite à votre espace utilisateur (account) et révélez les valeurs cachées dans API ACCESS. Attention, la transformation vous demande un user et une clé (key). Ces deux valeurs correspondent respectivement à votre adresse email et à la valeur identifiée comme "secret" sur votre compte riskiq. Pour plus d'information sur cette transformation, ce référer à [cet article](https://blog.passivetotal.org/brand-new-maltego-transforms-and-code/).
+
+
+----
+
+![PassiveTotal](images/rendu/passive.png)
+
+
+----
 
 Vous pouvez chercher vous même des informations sur d'autres transformations disponibles.
 
