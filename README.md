@@ -165,9 +165,9 @@ On va maintenant installer la Shodan Tranform. Shodan.io est un "analyseur d'Int
 
 ----
 
-![VirusTotal](images/rendu/virus.png)
+![Shodan](images/rendu/shodan.png)
 
-J'ai eu des grosses surprises avec ces tranformations, Je suis arrivé à trouver la signature d'un keylogger sur une machine d'un domaine. Cela rends Maltego un outil de collect de donnée utilisable aussi pour un pentest par exemple et permet de faire l'automatisation de recherche de vulnérabilités cependant il semble impossible de savoir où l'information a été trouvé ni comment ce qui fait perdre un peu de son interêt.
+Shodan a permis d'extraire des informations concernant une IP, ces informations sont les ports et des informations tiers que je n'ai pas pu comprendre. Il est intéressant pour récupérer les informations de machine découvert derrière des IP trouvés.
 
 ----
 
@@ -178,6 +178,7 @@ PassiveTotal est une plateforme de recherche de menaces. Le but est de contribue
 
 ![PassiveTotal](images/rendu/passive.png)
 
+J'ai eu de gros problèmes à run les transformations avec de gros erreur qui retourne des erreurs 500, malgré l'utilisation de ma clé d'api. Ce qui fait que les informations que je trouve son clairement limité et peu utile.
 
 ----
 
@@ -196,6 +197,16 @@ Utilisez donc ces nouvelles transformations que vous avez installé.
 Tous les résultats sur le graph sont utilisables pour lancer des nouvelles recherches. Un clique-droit sur les différentes icônes vous permet de lancer des transformations à partir de cette entité. Vous pouvez lancer des transformations sur des numéros de téléphone, des services, des adresses IP, des coordonnées, des documents, etc.
 
 Utilisez quelques résultats retrouvés lors de vos recherches précédentes pour lancer des transformations sur d'autres entités de types différents à celles que vous avez déjà testé (Person, Domain, email). Est-ce que vous arrivez à trouver quelque chose d'intéressant ? Est-ce que le graph devient difficile à gérer ? Documentez vos activités avec des captures et des commentaires.
+
+----
+
+L'outil `Have I Been Pwned?` est intéressant car il permet de rapidement savoir si un adresse email est vulnérale par le biais d'un compte et donc potentiellement pouvoir utiliser ces fuites de données.
+
+Cependant on voit que dans l'ensemble, la multiplication des transformations impliquent une augmentation des données trouvés mais aussi des informations qui ne sont pas forcément intéressante ce qui pollue beaucoup le graphique. De plus, je trouve la manipulation et le parcours du graphique est clairement mauvaise et cela devient vite ingérable.
+
+Pour finir, l'utilisation d'API externe force la création de compte sur un ensemble de service totalement absurde car des clés API sont nécessaire pour sécuriser leur utilisation. Je trouve cela dommage et devient pénible à utiliser.
+
+----
 
 [GitHub est aussi une source précieuse de transformations](https://github.com/search?q=maltego+transform) qui ne se trouvent pas dans le Hub. Est-ce que vous avez une idée pour une transformation ? Vous pouvez [les developper vous même](https://docs.maltego.com/support/solutions/articles/15000017605-writing-local-transforms-in-python) aussi en python ! 
 
